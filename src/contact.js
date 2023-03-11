@@ -1,7 +1,7 @@
 export default function contact() {
   const content = document.querySelector(".content");
 
-  const contactPage =  document.createElement("div");
+  const contactPage = document.createElement("div");
   contactPage.classList.add("contact-page");
   content.appendChild(contactPage);
   const selectContactPage = document.querySelector(".contact-page");
@@ -20,7 +20,7 @@ export default function contact() {
   subject.classList.add("subject");
   selectContactForm.appendChild(subject);
   const selectSubject = document.querySelector(".subject");
-  
+
   const sendButton = document.createElement("button");
   sendButton.textContent = "Send";
   contactForm.appendChild(sendButton);

@@ -1,4 +1,4 @@
-export {array}
+export { array };
 let array = [];
 export default function header() {
   const content = document.querySelector(".content");
@@ -12,7 +12,7 @@ export default function header() {
     for (let i = 0; i < 1; i++) {
       let li = document.createElement("li");
       li.textContent = text;
-      li.setAttribute("id", idName)
+      li.setAttribute("id", idName);
       array.push(li);
       ul.appendChild(li);
     }

@@ -15,21 +15,21 @@ export default function menu() {
 
   let divArr = [];
 
-  function createDiv(number, xd) {
-    for (let i = 0;  i < number; i++) {
+  function createDiv(number) {
+    for (let i = 0; i < number; i++) {
       const menuCard = document.createElement("div");
       divArr.push(menuCard);
     }
-    divArr.forEach(element => {
+    divArr.forEach((element) => {
       selectmenuSection.appendChild(element);
 
       const menuCardImg = document.createElement("img");
-      menuCardImg.src = "../src/img/croissant.png"
+      menuCardImg.src = "../src/img/croissant.png";
       element.appendChild(menuCardImg);
 
       const menuCardH1 = document.createElement("h1");
       menuCardH1.textContent = "Croissant";
-      element.appendChild(menuCardH1); 
+      element.appendChild(menuCardH1);
 
       const menuCardP = document.createElement("p");
       menuCardP.textContent = "Lorem ipsum dolor sit am qui repellat quia aut earum quia et maiores quia.";
@@ -44,5 +44,5 @@ export default function menu() {
       element.appendChild(menuCardButton);
     });
   }
- createDiv(6)
+  createDiv(6);
 }
